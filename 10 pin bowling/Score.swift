@@ -75,4 +75,14 @@ class Score {
     private func isSpare(score:(first:Int,second:Int)) -> Bool {
         return (score.first + score.second) == 10
     }
+    
+    public func totalScore() -> Int {
+        let points = getPoints()
+        var total = 0;
+        for point in points {
+            total += point.frameScore
+        }
+        
+        return total
+    }
 }

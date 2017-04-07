@@ -202,27 +202,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "10 pin bowling/GameViewController.swift"
-            timestampString = "513263751.511026"
+            timestampString = "513265191.111358"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "GameViewController"
             landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "10 pin bowling/GameViewController.swift"
-            timestampString = "513263751.511026"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

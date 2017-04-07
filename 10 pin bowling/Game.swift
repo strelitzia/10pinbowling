@@ -56,6 +56,20 @@ class Game {
         turnDone()
     }
     
+    func getWinners() -> [(person: Person, finalScore:Int)] {
+        var winners :[(person: Person, finalScore:Int)] = [(person: players[0].person, finalScore:players[0].score.totalScore())]
+        for player in players {
+            let winner = winners[0]
+            let playerScore = player.score.totalScore()
+            if winner.finalScore < playerScore {
+                winners = [(person: player.person, finalScore:playerScore)]
+            } else if winner.finalScore == playerScore {
+                winners.append((person: player.person, finalScore: playerScore))
+            }
+        }
+        return winners
+    }
+    
     func turnDone() {
         players[turn].score.addScore(first: currenPlayerScore.first!, second: currenPlayerScore.second!)
         _shouldResetPins = true

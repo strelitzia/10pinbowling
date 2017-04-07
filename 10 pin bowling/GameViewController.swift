@@ -50,7 +50,7 @@ class GameViewController: UIViewController {
 
         if game!.gameFinished() {
             rollButton.isUserInteractionEnabled = false
-            
+           displayGameOveralert()
 
         } else {
             rollButton.isUserInteractionEnabled = true
@@ -66,6 +66,27 @@ class GameViewController: UIViewController {
     
     func addScoreToTheScoreBoard() {
 
+    }
+    
+    func displayGameOveralert() {
+        let winners = game!.getWinners()
+        
+        var winnerString = "Well done to: "
+        
+        for winner in winners {
+            winnerString = "\(winnerString) \(winner.person.name), "
+        }
+        winnerString = "\(winnerString) for winning with \(winners[0].finalScore) points "
+        
+        if winners.count > 1 {
+            winnerString = "\(winnerString) each"
+        }
+        
+        let alert = UIAlertController(title: "Game Over", message: winnerString, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.cancel, handler: nil))
+        self.present(alert, animated: true, completion: {
+
+        })
     }
     
 }
