@@ -22,10 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XV-fp-T7I" userLabel="playing view">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XV-fp-T7I" userLabel="playing view">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdk-2Y-xun">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdk-2Y-xun">
                                         <rect key="frame" x="20" y="147" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="47g-xF-TuM"/>
@@ -34,14 +34,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-Pi-X22">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-Pi-X22">
                                         <rect key="frame" x="40" y="217" width="295" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aj-Ra-1Jm">
-                                        <rect key="frame" x="168.5" y="96.5" width="38" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aj-Ra-1Jm">
+                                        <rect key="frame" x="169" y="97" width="38" height="30"/>
                                         <state key="normal" title="ROLL"/>
                                         <connections>
                                             <action selector="rolled:" destination="uzf-6D-7q0" eventType="touchUpInside" id="Fg8-18-45J"/>
@@ -60,30 +60,10 @@
                                     <constraint firstItem="Hdk-2Y-xun" firstAttribute="leading" secondItem="9XV-fp-T7I" secondAttribute="leading" constant="20" id="zcn-lE-5P2"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q18-Mt-5y4">
-                                <rect key="frame" x="0.0" y="265" width="375" height="402"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZEv-Mr-fti">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fGt-6J-nCA">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Zwq-SB-TJw" firstAttribute="top" secondItem="9XV-fp-T7I" secondAttribute="bottom" constant="410" id="3Gf-jQ-gdD"/>
                             <constraint firstItem="9XV-fp-T7I" firstAttribute="top" secondItem="bjU-aG-dLp" secondAttribute="top" id="A2i-xC-y07"/>
                             <constraint firstAttribute="trailing" secondItem="9XV-fp-T7I" secondAttribute="trailing" id="Q6w-IM-lgL"/>
                             <constraint firstItem="9XV-fp-T7I" firstAttribute="leading" secondItem="bjU-aG-dLp" secondAttribute="leading" id="cc8-9E-DzN"/>
@@ -98,14 +78,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg0-fx-nPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="736.79999999999995" y="35.532233883058474"/>
-        </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="fMA-S9-LgX">
-            <objects>
-                <collectionViewController id="hfo-6X-Tis" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bsm-m7-6El" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1546" y="105"/>
         </scene>
         <!--AddUserTableViewControllerID-->
         <scene sceneID="HiD-E3-gVC">

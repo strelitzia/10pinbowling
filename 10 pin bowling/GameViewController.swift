@@ -13,7 +13,6 @@ class GameViewController: UIViewController {
     var game:Game?
     var turn:Int = 0
     var hitablePinAmount: Int = 11 //(0..10)
-    @IBOutlet weak var scoreView: UIScrollView!
     
     @IBAction func rolled(_ sender: Any) {
         let numberOfPinsHit = (getRandomNumberOutOf(number: hitablePinAmount))
@@ -66,23 +65,7 @@ class GameViewController: UIViewController {
     }
     
     func addScoreToTheScoreBoard() {
-//        for subview in scoreView.subviews {
-//            subview.removeFromSuperview()
-//        }
-//        scoreView.isScrollEnabled = true
-//
-//        for player in game!.players {
-//            let playerScoreBoard:UILabel = UILabel(frame: CGRect(x: 0, y: , width: scoreView.frame.size.width * 4, height: 100))
-//            let points = player.score.getPoints()
-//            var continuousScore:Int = 0
-//            var text = "---- \(player.person.name) "
-//            for frame in 1 ..< 10 {
-//                continuousScore += points[frame-1].frameScore
-//                text = "\(text) Frame : \(frame)  |  Result: \(points[frame-1].result)  |  Frame Score : \(points[frame-1].frameScore) | runningScore \(continuousScore):"
-//            }
-//            playerScoreBoard.text = text
-//            scoreView.addSubview(playerScoreBoard)
-//        }
+
     }
     
 }
